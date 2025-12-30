@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan department]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="https://default.com"/>
+  <listeners>
+    <listener class-name="testNG.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Personal loan(failed)">
+    <parameter name="URL" value="https://default.com"/>
+    <classes>
+      <class name="testNG.TestcaseSample">
+        <methods>
+          <include name="Afmethod"/>
+          <include name="bfsuite"/>
+          <include name="Method"/>
+          <include name="AFClass"/>
+          <include name="Testdemo"/>
+          <include name="Testcase"/>
+          <include name="Testprint"/>
+          <include name="BFClass"/>
+        </methods>
+      </class> <!-- testNG.TestcaseSample -->
+    </classes>
+  </test> <!-- Personal loan(failed) -->
+</suite> <!-- Failed suite [Loan department] -->
