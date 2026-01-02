@@ -1,0 +1,20 @@
+--------------------Arrays---------------------------
+1.To print min/max number in matrix in specific column
+
+--------------------Strings--------------------------
+1. How many types of string method?
+=> two type --> string literal and by creating object of string class
+
+2.How to print reverse string?
+3.Stringbuilder and stringbuffer which one is better?
+=> stringbuffer is better, synchrozied, thread safe etc
+
+4.when to use == and equals() method to compare strings?
+=> a.equals(b)---> it will compare content of a and b
+=> a==b ---> it will compare object which refers to same content 
+
+
+5.What are packages ?
+package are set of classes and interfaces
+without defining package , u can not access classes present in it.
+we dont need to mention default package (java.lang package and java.util ) that will come with java compiler by default.

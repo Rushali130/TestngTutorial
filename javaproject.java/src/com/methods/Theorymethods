@@ -1,0 +1,14 @@
+ 
+ Methods in JAVA
+ 
+ 1. If you want to access method in your current java class--> CREATE object of same class
+ --> Then access that method (by ex. sc. )
+ 
+ 2.If you want to access method in other java class--> CREATE object of that class
+ --> Then access that method in current java class(by ex. sc. )
+ 
+ 3.If you want to access method in your java class without creating object--> then mark your method as STATTIC 
+ --> then it will belong to class not object --> Then access that method directly(by ex. sc. )
+ STATIC keyword will move your method to class level--> no need for object
+ 
+ 4. you can declare method as much you want and access in same class

@@ -1,0 +1,7 @@
+------------------JAVA OOPS CONCEPTS-------------------
+
+1.Abstraction
+-------->abstract Methods and Abstract Class
+-------->abstract method-(method without body and with abstract key word called as abstarct method)
+-------->Abstract class-(Class which is defined with abstract key word called as abstract class)
+-------->We can not create objects for abstract class
