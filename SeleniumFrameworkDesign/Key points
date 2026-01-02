@@ -1,0 +1,17 @@
+1. If you want run test cases parallely , then add Parallel="tests" word in suite level in testNG file 
+
+2.If you want run test cases by sequence  , then add tests separately inside suite tag
+
+3.if you want run any test case which is depend on other test then mentioned dependsOnMethods={"other test name"} 
+infront of the test.
+
+4.If you want set limit (like how many tests should run from 1 class if we have more than 100) then use thread count="1" at test level
+
+5.if u want to run only test which has groups defined then use grouping concept in testng xml file 
+with syntax <groups> 
+            <run>
+            <includes> name="  "
+            </run>
+            </groups>
+            
+6. if u want any test to run always then use alwaysRun=true infront of that test 
