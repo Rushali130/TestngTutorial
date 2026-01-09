@@ -1,20 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="6" passed="0" failed="2" skipped="0">
+<testng-results retried="2" ignored="0" total="10" passed="0" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-07T16:07:07 IST" name="Suite" finished-at="2026-01-07T16:07:21 IST" duration-ms="13744">
+  <suite started-at="2026-01-08T21:41:53 IST" name="Suite" finished-at="2026-01-08T21:42:17 IST" duration-ms="24598">
     <groups>
+      <group name="Purchase">
+        <method signature="Loginpage.submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" name="submitOrder" class="seleniumproject.tests.Loginpage"/>
+      </group> <!-- Purchase -->
       <group name="errorvalidation">
-        <method signature="ErrorValidation.loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" name="loginErrorValidation" class="seleniumproject.tests.ErrorValidation"/>
+        <method signature="ErrorValidation.loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" name="loginErrorValidation" class="seleniumproject.tests.ErrorValidation"/>
       </group> <!-- errorvalidation -->
     </groups>
-    <test started-at="2026-01-07T16:07:07 IST" name="ErrorValidation" finished-at="2026-01-07T16:07:21 IST" duration-ms="13744">
-      <class name="seleniumproject.tests.ErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:08 IST" name="launchApplication" finished-at="2026-01-07T16:07:14 IST" duration-ms="6202" status="PASS">
+    <test started-at="2026-01-08T21:41:53 IST" name="Loginpage" finished-at="2026-01-08T21:42:14 IST" duration-ms="21528">
+      <class name="seleniumproject.tests.Loginpage">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:41:53 IST" name="launchApplication" finished-at="2026-01-08T21:42:04 IST" duration-ms="10075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:14 IST" name="loginErrorValidation" finished-at="2026-01-07T16:07:15 IST" duration-ms="1053" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:42:04 IST" name="submitOrder" data-provider="getdata1" finished-at="2026-01-08T21:42:05 IST" duration-ms="1295" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Magnet123, Productname=ZARA COAT 3, email=rushali@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at seleniumproject.pageojects.productcatalogue.addproductToCart(productcatalogue.java:51)
+at seleniumproject.tests.Loginpage.submitOrder(Loginpage.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:42:05 IST" name="closeBrowser" finished-at="2026-01-08T21:42:05 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:42:05 IST" name="launchApplication" finished-at="2026-01-08T21:42:10 IST" duration-ms="5091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:42:10 IST" name="submitOrder" data-provider="getdata1" finished-at="2026-01-08T21:42:14 IST" duration-ms="3452" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Magnet@123, Productname=Adidas Original, email=modak@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at seleniumproject.tests.Loginpage.submitOrder(Loginpage.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.Loginpage@a202ccb]" started-at="2026-01-08T21:42:14 IST" name="closeBrowser" finished-at="2026-01-08T21:42:14 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- seleniumproject.tests.Loginpage -->
+    </test> <!-- Loginpage -->
+    <test started-at="2026-01-08T21:41:53 IST" name="ErrorValidation" finished-at="2026-01-08T21:42:17 IST" duration-ms="24598">
+      <class name="seleniumproject.tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:41:53 IST" name="launchApplication" finished-at="2026-01-08T21:42:04 IST" duration-ms="10531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:04 IST" name="loginErrorValidation" finished-at="2026-01-08T21:42:05 IST" duration-ms="993" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -44,33 +155,27 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:15 IST" name="closeBrowser" finished-at="2026-01-07T16:07:15 IST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:05 IST" name="closeBrowser" finished-at="2026-01-08T21:42:05 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:15 IST" name="launchApplication" finished-at="2026-01-07T16:07:20 IST" duration-ms="4792" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:05 IST" name="launchApplication" finished-at="2026-01-08T21:42:10 IST" duration-ms="5048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:20 IST" name="loginErrorValidation" finished-at="2026-01-07T16:07:21 IST" duration-ms="930" status="FAIL">
+        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:10 IST" name="loginErrorValidation" finished-at="2026-01-08T21:42:11 IST" duration-ms="1151" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -100,44 +205,191 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@708400f6]" started-at="2026-01-07T16:07:21 IST" name="closeBrowser" finished-at="2026-01-07T16:07:21 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:11 IST" name="closeBrowser" finished-at="2026-01-08T21:42:12 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:12 IST" name="launchApplication" finished-at="2026-01-08T21:42:16 IST" duration-ms="4429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:16 IST" name="productErrorValidation" finished-at="2026-01-08T21:42:17 IST" duration-ms="1084" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at seleniumproject.pageojects.productcatalogue.addproductToCart(productcatalogue.java:51)
+at seleniumproject.tests.ErrorValidation.productErrorValidation(ErrorValidation.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@77d2e85]" started-at="2026-01-08T21:42:17 IST" name="closeBrowser" finished-at="2026-01-08T21:42:17 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- seleniumproject.tests.ErrorValidation -->
     </test> <!-- ErrorValidation -->
   </suite> <!-- Suite -->
-  <suite started-at="2026-01-07T16:07:22 IST" name="Suite (0)" finished-at="2026-01-07T16:07:34 IST" duration-ms="12735">
+  <suite started-at="2026-01-08T21:42:17 IST" name="Suite (0)" finished-at="2026-01-08T21:42:37 IST" duration-ms="19953">
     <groups>
+      <group name="Purchase">
+        <method signature="Loginpage.submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" name="submitOrder" class="seleniumproject.tests.Loginpage"/>
+      </group> <!-- Purchase -->
       <group name="errorvalidation">
-        <method signature="ErrorValidation.loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" name="loginErrorValidation" class="seleniumproject.tests.ErrorValidation"/>
+        <method signature="ErrorValidation.loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" name="loginErrorValidation" class="seleniumproject.tests.ErrorValidation"/>
       </group> <!-- errorvalidation -->
     </groups>
-    <test started-at="2026-01-07T16:07:22 IST" name="ErrorValidation" finished-at="2026-01-07T16:07:34 IST" duration-ms="12735">
-      <class name="seleniumproject.tests.ErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:22 IST" name="launchApplication" finished-at="2026-01-07T16:07:27 IST" duration-ms="5168" status="PASS">
+    <test started-at="2026-01-08T21:42:17 IST" name="Loginpage" finished-at="2026-01-08T21:42:34 IST" duration-ms="16499">
+      <class name="seleniumproject.tests.Loginpage">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:17 IST" name="launchApplication" finished-at="2026-01-08T21:42:23 IST" duration-ms="5417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:27 IST" name="loginErrorValidation" finished-at="2026-01-07T16:07:28 IST" duration-ms="862" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:23 IST" name="submitOrder" data-provider="getdata1" finished-at="2026-01-08T21:42:25 IST" duration-ms="1671" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Magnet123, Productname=ZARA COAT 3, email=rushali@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at seleniumproject.pageojects.productcatalogue.addproductToCart(productcatalogue.java:51)
+at seleniumproject.tests.Loginpage.submitOrder(Loginpage.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:25 IST" name="closeBrowser" finished-at="2026-01-08T21:42:25 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:25 IST" name="launchApplication" finished-at="2026-01-08T21:42:28 IST" duration-ms="3366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:28 IST" name="submitOrder" data-provider="getdata1" finished-at="2026-01-08T21:42:33 IST" duration-ms="5026" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Magnet@123, Productname=Adidas Original, email=modak@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at seleniumproject.tests.Loginpage.submitOrder(Loginpage.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.Loginpage@3f0846c6]" started-at="2026-01-08T21:42:34 IST" name="closeBrowser" finished-at="2026-01-08T21:42:34 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- seleniumproject.tests.Loginpage -->
+    </test> <!-- Loginpage -->
+    <test started-at="2026-01-08T21:42:17 IST" name="ErrorValidation" finished-at="2026-01-08T21:42:37 IST" duration-ms="19951">
+      <class name="seleniumproject.tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:17 IST" name="launchApplication" finished-at="2026-01-08T21:42:21 IST" duration-ms="3481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:21 IST" name="loginErrorValidation" finished-at="2026-01-08T21:42:24 IST" duration-ms="2953" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -167,33 +419,27 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:28 IST" name="closeBrowser" finished-at="2026-01-07T16:07:28 IST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:24 IST" name="closeBrowser" finished-at="2026-01-08T21:42:24 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:28 IST" name="launchApplication" finished-at="2026-01-07T16:07:33 IST" duration-ms="5168" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:24 IST" name="launchApplication" finished-at="2026-01-08T21:42:29 IST" duration-ms="5120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:33 IST" name="loginErrorValidation" finished-at="2026-01-07T16:07:34 IST" duration-ms="915" status="FAIL">
+        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:29 IST" name="loginErrorValidation" finished-at="2026-01-08T21:42:30 IST" duration-ms="1065" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -223,25 +469,61 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@1ae67cad]" started-at="2026-01-07T16:07:34 IST" name="closeBrowser" finished-at="2026-01-07T16:07:34 IST" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:31 IST" name="closeBrowser" finished-at="2026-01-08T21:42:31 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:31 IST" name="launchApplication" finished-at="2026-01-08T21:42:34 IST" duration-ms="3226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:34 IST" name="productErrorValidation" finished-at="2026-01-08T21:42:37 IST" duration-ms="2957" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at seleniumproject.pageojects.productcatalogue.addproductToCart(productcatalogue.java:51)
+at seleniumproject.tests.ErrorValidation.productErrorValidation(ErrorValidation.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumproject.tests.ErrorValidation@13cf7d52]" started-at="2026-01-08T21:42:37 IST" name="closeBrowser" finished-at="2026-01-08T21:42:37 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
